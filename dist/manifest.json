@@ -6,13 +6,13 @@
   "manifest_version": 2,
   "default_locale": "ja",
   "icons": {
-    "16": "icon-16.png",
-    "128": "icon-128.png"
+    "16": "icons/icon-16.png",
+    "128": "icons/icon-128.png"
   },
   "browser_action": {
     "default_icon": {
-      "19": "icon-19.png",
-      "38": "icon-38.png"
+      "19": "icons/icon-19.png",
+      "38": "icons/icon-38.png"
     },
     "default_title": "__MSG_browserActionTitle__",
     "default_popup": "index.html"
