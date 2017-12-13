@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <a @click="getInfo">getPageInfo</a>
-    <span>{{ info }}</span>
+    <input class="link-input" type="text" v-model="link" />
   </div>
 </template>
 
@@ -10,32 +9,45 @@ export default {
   name: 'app',
   data () {
     return {
-      info: 'hoge'
+      link: ''
     }
   },
   methods: {
     getInfo () {
       chrome.tabs.getSelected(null, (tab) => {
-          this.$data.info = `[${tab.url} ${tab.title}]`
+          this.$data.link = `[${tab.url} ${tab.title}]`
       })
     }
+  },
+  created () {
+    this.getInfo()
   }
 }
 </script>
 
 <style lang="scss">
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  padding: 16px;
-  width: 200px;
-  height: 32px;
+  padding: 8px;
 }
 
-a {
-  color: #42b983;
+.link-input {
+  padding: 4px 8px;
+  width: 240px;
+  line-height: 24px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
 }
 </style>

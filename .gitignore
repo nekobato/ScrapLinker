@@ -3,7 +3,6 @@ node_modules/
 dist/*
 !dist/_locales
 !dist/icons
-!dist/images
 !dist/index.html
 !dist/manifest.json
 npm-debug.log
