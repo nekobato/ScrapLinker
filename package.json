@@ -1,6 +1,6 @@
 {
-  "name": "scrab",
-  "description": "Scrapbox Linker",
+  "name": "ScrapLinker",
+  "description": "Scrapbox Linkmaker",
   "version": "1.0.0",
   "author": "nekobato <nekobato@gmail.com>",
   "license": "MIT",
