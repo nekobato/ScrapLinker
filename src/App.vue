@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <input class="link-input" type="text" v-model="link" />
+    <input class="link-input" type="text" v-model="link" :ref="input" />
   </div>
 </template>
 
@@ -15,7 +15,8 @@ export default {
   methods: {
     getInfo () {
       chrome.tabs.getSelected(null, (tab) => {
-          this.$data.link = `[${tab.url} ${tab.title}]`
+          this.link = `[${tab.url} ${tab.title}]`
+          this.$refs.input.focus()
       })
     }
   },
@@ -26,11 +27,6 @@ export default {
 </script>
 
 <style lang="scss">
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -43,7 +39,7 @@ body {
 
 .link-input {
   padding: 4px 8px;
-  width: 240px;
+  width: 100%;
   line-height: 24px;
   border: 1px solid #ddd;
   border-radius: 4px;
