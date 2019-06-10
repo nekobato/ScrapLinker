@@ -3,7 +3,8 @@
 function main() {
   const el = document.querySelector('#link_input');
   chrome.tabs.getSelected(null, tab => {
-    el.value = `[${tab.url} ${tab.title}]`;
+    const title = tab.title.replace('[', '').replace(']', '');
+    el.value = `[${tab.url} ${title}]`;
     el.select();
   });
 }
