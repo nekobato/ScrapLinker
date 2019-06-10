@@ -17,7 +17,5 @@
     "default_title": "__MSG_browserActionTitle__",
     "default_popup": "index.html"
   },
-  "permissions": [
-    "tabs"
-  ]
+  "permissions": ["tabs"]
 }
