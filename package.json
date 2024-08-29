@@ -1,7 +1,7 @@
 {
   "name": "scraplinker",
   "version": "1.2.1",
-  "description": "Scrapbox link generator",
+  "description": "Helpfeel Cosense link generator",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "zip -r ./scraplinker.zip dist/*"

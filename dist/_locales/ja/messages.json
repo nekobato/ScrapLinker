@@ -8,7 +8,7 @@
     "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
   },
   "appDescription": {
-    "message": "ページからScrapboxのリンクを生成",
+    "message": "ページからHelpfeel Cosenseのリンクを生成",
     "description": "The description of the application"
   },
   "browserActionTitle": {
