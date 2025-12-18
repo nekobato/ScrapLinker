@@ -4,7 +4,7 @@
 
 #app {
   display: flex;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
@@ -36,4 +36,15 @@
   font-size: 16px;
   color: #fff;
   outline: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.copy.copy--copied {
+  background: #24976f;
+}
+
+.copy.copy--failure {
+  background: #e74c3c;
+  border-color: #d63031;
+  color: #fff;
 }
